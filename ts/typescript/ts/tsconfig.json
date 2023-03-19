@@ -1,0 +1,29 @@
+{
+  "compilerOptions": { // typescript 코드가 컴파일되는 방식
+
+    /* Language and Environment */
+    "target": "ES6",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    /* Modules */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+
+    /* Emit */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+    /* Type Checking */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+
+    /* Completeness */
+    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "experimentalDecorators": true
+  },
+  "exclude": [ // 컴파일 시 제외시킬 파일들
+    "node_modules" // default 로 제외 되서 굳이 포함시킬 필요는 없음
+  ],
+  /*"include":[ // 컴파일 시 포함시킬 파일들. 하나라도 포함될 경우, 해당 파일을 제외한 파일들은 컴파일 대상에서 제외됨  
+  ]*/
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": { // typescript 코드가 컴파일되는 방식
+    "target": "ES6",                     
+    "module": "ES2015",       
+    "esModuleInterop": true,                              
+    "forceConsistentCasingInFileNames": true,          
+    "strict": true,                                      
+    "skipLibCheck": true,
+    "sourceMap": true,
+    //"outFile": "./dist/bundle.js", // ES6 모듈에는 지원하지 않음. ts와 네임스페이스가 연결되게끔 해줌.
+    "outDir": "./dist",
+    //"rootDir": "./src", // 필요없음. 왜냐하면 웹팩이 루트파일 위치를 결정 할 것이기 때문.
+    "experimentalDecorators": true
+  },
+  // "exclude": [ // 컴파일 시 제외시킬 파일들
+  //   "node_modules" // default 로 제외 되서 굳이 포함시킬 필요는 없음
+  // ],
+  /*"include":[ // 컴파일 시 포함시킬 파일들. 하나라도 포함될 경우, 해당 파일을 제외한 파일들은 컴파일 대상에서 제외됨  
+  ]*/
+}
